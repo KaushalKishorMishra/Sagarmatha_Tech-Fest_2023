@@ -13,10 +13,10 @@ This repository houses the codebase and resources for building the dynamic and e
 - **Gallery:** View captivating photos and videos from past Tech-Fest editions.
 
 ## Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript
+- **Frontend:** HTML5, SCSS, JavaScript, Material UI, Fontawesome Icons
 - **Backend:** Python,Django
 - **Database:** MySQL
-- **Deployment:** 
+<!-- - **Deployment:**  -->
 
 ## Contributing
 We welcome contributions from the open-source community to enhance the website's features, design, and functionality. If you're a developer, designer, or content creator, feel free to fork this repository, create your own branch, and submit pull requests.
@@ -28,6 +28,7 @@ To run the website locally, follow these steps:
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 5. Open your browser and go to `http://localhost:3000` to see the website in action.
+6. Also join our Trello Board thorough link `https://trello.com/invite/b/TQRHGAYW/ATTIa7cf7e5422df270d5469b9535ed282e564802EDD/techfest`
 
 
 Let's collaborate and create an exceptional digital space for Sagarmatha Tech-Fest 2023! 🌟
