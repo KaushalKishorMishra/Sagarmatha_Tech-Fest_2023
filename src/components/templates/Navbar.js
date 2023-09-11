@@ -12,9 +12,9 @@ import { AppBar, Box, Button, Container, Link } from '@mui/material'
 
 const Navbar = () => {
     const id = 1
-    const changeId = (v) => {
-        console.log(v)
-    }
+    // const changeId = (v) => {
+    //     console.log(v)
+    // }
     return (
         <>
             {/* <nav>
