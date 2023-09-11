@@ -71,9 +71,9 @@ const Footer = () => {
               <img src={discordIcon} alt='discord  logo' />
             </Button>
           </Box>
-          <Box sx={{ py: 1, px: 3, backgroundColor: "white.dark", borderRadius: 30, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <Typography variant='description' sx={{ color: "white.light", fontSize: { lg: "1.5rem", xs: "1rem" } }} textAlign={"center"}>Not Registered yet ??</Typography>
-            <Button sx={{ fontFamily: {} }}>
+          <Box sx={{ padding: "0 0 0 10px", backgroundColor: "white.light", borderRadius: 30, display: "flex", alignItems: "center", justifyContent: "center", mb: 2 }}>
+            <Typography variant='description' sx={{ color: "blue_color.main", fontSize: { lg: "1.5rem", xs: "1rem" } }} textAlign={"center"}>Not Registered yet for the event? Register Now and get exciting news and gifts.</Typography>
+            <Button variant='contained' sx={{ px: 3, py: 1, fontSize: theme.typography.h5, borderRadius: "50px" }}>
               Register
             </Button>
           </Box>
@@ -84,7 +84,7 @@ const Footer = () => {
                 color: "white.light"
               }
             }} >
-              <FontAwesomeIcon icon={faHouse} size="l" />
+              <FontAwesomeIcon icon={faHouse} />
               <Typography variant="caption" >Home</Typography>
             </Button>
 
@@ -93,7 +93,7 @@ const Footer = () => {
                 color: "white.light"
               }
             }}>
-              <FontAwesomeIcon icon={faInfo} size="l" />
+              <FontAwesomeIcon icon={faInfo} />
               <Typography variant="caption" >About</Typography>
             </Button>
 
@@ -102,7 +102,7 @@ const Footer = () => {
                 color: "white.light"
               }
             }}>
-              <FontAwesomeIcon icon={faCalendarCheck} size="l" />
+              <FontAwesomeIcon icon={faCalendarCheck} />
               <Typography variant="caption">Pre-Event</Typography>
             </Button>
 
@@ -111,7 +111,7 @@ const Footer = () => {
                 color: "white.light"
               }
             }}>
-              <FontAwesomeIcon icon={faCalendarDays} size="l" />
+              <FontAwesomeIcon icon={faCalendarDays} />
               <Typography variant="caption">Exhibition Schedule</Typography>
             </Button>
 
@@ -120,7 +120,7 @@ const Footer = () => {
                 color: "white.light"
               }
             }}>
-              <FontAwesomeIcon icon={faBlenderPhone} size="l" />
+              <FontAwesomeIcon icon={faBlenderPhone} />
               <Typography variant="caption">Contact</Typography>
             </Button>
 
@@ -129,13 +129,15 @@ const Footer = () => {
                 color: "white.light"
               }
             }}>
-              <FontAwesomeIcon icon={faBriefcase} size="l" />
+              <FontAwesomeIcon icon={faBriefcase} />
               <Typography variant="caption" >Workshops</Typography>
             </Button>
           </Box>
         </Container>
-        <Box sx={{ borderTop: 3, borderColor: "white.light", py: 1, width: "100%", display: "flex", justifyContent: "center", alignItems: "center", gap: 1, flexDirection: { lg: "row", xs: "column" } }}>
-          <Typography variant='copyright' sx={{ color: "white.light" }} >Sagarmatha Tech-fest © 2023 - 2024 | </Typography>
+        <Box sx={{ borderTop: 3, borderColor: "white.light", py: 1, width: "100%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: { lg: "row", xs: "column" } }}>
+
+          <Typography variant='copyright' sx={{ color: "white.light" }} >Sagarmatha Tech-fest © 2023 - 2024 |</Typography>
+          {" "}
           <Typography variant='copyright' sx={{
             borderBottom: 1,
             color: "white.light", "&:hover": {
@@ -146,8 +148,9 @@ const Footer = () => {
               Terms & Conditions
             </a>
           </Typography>
-          <Typography variant='copyright' sx={{ color: "white.light" }} >| Designed By:- </Typography>
-          <Typography variant='credit' sx={{
+
+
+          <Typography variant='copyright' sx={{ color: "white.light" }} >| Designed By:-        <Typography variant='credit' sx={{
             borderBottom: 1,
             color: "white.light", "&:hover": {
               color: "white.main",
@@ -156,7 +159,9 @@ const Footer = () => {
             <a href='/'>
               Leon Lama
             </a>
-          </Typography>
+          </Typography></Typography>
+
+
         </Box>
       </Box>
     </ThemeProvider>
