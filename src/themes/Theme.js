@@ -42,6 +42,9 @@ export const theme = createTheme({
             dark: '#000000',
             contrast: '#ffffff'
         },
+        blue_color: {
+            main: '#0a8fd6'
+        }
 
     },
 
