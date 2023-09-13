@@ -8,27 +8,33 @@ export const theme = createTheme({
     palette: {
         primary: {
             main: '#5357c4',
-            light: '',
-            dark: '',
-            contrast: ''
+            light: '#989adc',
+            dark: '#191a3b',
+            contrast: '#c4c053'
         },
         secondary: {
             main: '#1291de',
-            light: '',
-            dark: '',
-            contrast: ''
+            light: '#71bdeb',
+            dark: '#052b43',
+            contrast: '#de5f12'
         },
         danger: {
             main: '#c50606',
-            light: '',
-            dark: '',
-            contrast: ''
+            light: '#dc6a6a',
+            dark: '#3b0202',
+            contrast: '#06c5c5'
         },
         warning: {
-            main: '#6bb0db',
-            light: '',
-            dark: '',
-            contrast: ''
+            main: '#ff5800',
+            light: '#ff9b66',
+            dark: '#4c1a00',
+            contrast: '#00a7ff'
+        },
+        calm: {
+            main: "",
+            light: "",
+            dark: "",
+            contrast: ""
         },
         white: {
             main: '#e6e6e6',
@@ -42,9 +48,6 @@ export const theme = createTheme({
             dark: '#000000',
             contrast: '#ffffff'
         },
-        blue_color: {
-            main: '#0a8fd6'
-        }
 
     },
 
@@ -76,7 +79,7 @@ export const theme = createTheme({
         title: {
             fontFamily: ['Varela Round', 'sans-serif'].join(','),
             fontSize: '2.5rem',
-            fontWeight: '600'
+            fontWeight: '700'
         },
         subtitle: {
             fontFamily: ['Asar', 'serif'].join(','),
@@ -96,9 +99,44 @@ export const theme = createTheme({
             fontSize: "1.3rem",
             fontWeight: '400',
         },
+        AsarFont: {
+            fontFamily: ['Asar', 'serif'].join(','),
+        },
+        AndikaFont: {
+            fontFamily: ['Andika', 'sans-serif'].join(','),
+        },
+        VarelaRoundFont: {
+            fontFamily: ['Varela Round', 'sans-serif'].join(','),
+        },
     },
 
     components: {
-
+        MuiButton: {
+            styleOverrides: {
+                text: {
+                    padding: '10px 20px',
+                    fontSize: '1.5rem',
+                    fontWeight: '500',
+                    textTransform: 'uppercase',
+                    '&:hover': {
+                        color: '#ffffff',
+                    }
+                },
+                action: {
+                    padding: '10px 40px',
+                    fontSize: { md: '1.2rem' },
+                    fontWeight: '700',
+                    textTransform: 'uppercase',
+                    borderRadius: '50px',
+                    backgroundColor: "#1291de",
+                    color: '#ffffff',
+                    fontFamily: ['Varela Round', 'sans-serif'].join(','),
+                    '&:hover': {
+                        backgroundColor: "#052b43",
+                        transition: ".5s ease-in"
+                    }
+                },
+            }
+        }
     }
 })

@@ -1,13 +1,13 @@
-import Navbar from "./components/templates/Navbar";
+// import Navbar from "./components/templates/Navbar";  
 import "./assets/css/style.css"
 // import PageNotFound from "./components/templates/PageNotFound";
 import Footer from "./components/templates/Footer"
-import HomePage from "./components/pages/HomePage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomePage />
       <Footer />
     </>

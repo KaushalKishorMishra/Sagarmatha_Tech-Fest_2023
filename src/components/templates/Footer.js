@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box sx={{ background: "linear-gradient(107deg, #5456C4 28.85%, #1094DF 98.13%)", borderRadius: "100px 100px 0 0", position: 'static' }}>
+      <Box sx={{ position: 'static' }} className="footer-section">
         <Box sx={{ mb: 1, display: "flex", gap: "2rem", alignItems: "center", px: 5, py: 2 }}>
           <Box sx={{ borderTop: 3, borderColor: "white.main", width: "45%" }}>
           </Box>
@@ -35,35 +35,35 @@ const Footer = () => {
         <Container maxWidth="xl" fixed sx={{ mb: 3, display: "flex", justifyContent: "center", flexDirection: "column" }}>
           <Typography variant='description' sx={{ color: "white.light" }} textAlign="center" >Join Us</Typography>
           <Box sx={{ display: "flex", justifyContent: "center", gap: "10px", mb: 3, alignItems: "center", flexDirection: { lg: "row", xs: "column" } }}>
-            <Button href='/' disableRipple sx={{
+            <Button variant='text' href='/' disableRipple sx={{
               filter: { lg: 'grayscale(100%)' }, '&:hover': {
                 filter: { lg: 'grayscale(0%)' }
               }
             }}>
               <img src={facebookIcon} alt='facebook logo' />
             </Button>
-            <Button href='/' disableRipple sx={{
+            <Button variant='text' href='/' disableRipple sx={{
               filter: { lg: 'grayscale(100%)' }, '&:hover': {
                 filter: { lg: 'grayscale(0%)' }
               }
             }}>
               <img src={gmailIcon} alt='gmail logo' />
             </Button>
-            <Button href='/' disableRipple sx={{
+            <Button variant='text' href='/' disableRipple sx={{
               filter: { lg: 'grayscale(100%)' }, '&:hover': {
                 filter: { lg: 'grayscale(0%)' }
               }
             }}>
               <img src={tiktokIcon} alt='tiktok logo' />
             </Button>
-            <Button href='/' disableRipple sx={{
+            <Button variant='text' href='/' disableRipple sx={{
               filter: { lg: 'grayscale(100%)' }, '&:hover': {
                 filter: { lg: 'grayscale(0%)' }
               }
             }}>
               <img src={instagramIcon} alt='instagram  logo' />
             </Button>
-            <Button href='/' disableRipple sx={{
+            <Button variant='text' href='/' disableRipple sx={{
               filter: { lg: 'grayscale(100%)' }, '&:hover': {
                 filter: { lg: 'grayscale(0%)' }
               }
@@ -79,7 +79,7 @@ const Footer = () => {
           </Box>
           <Typography variant='description' sx={{ color: "white.light" }} textAlign={"center"}>Navigate to:</Typography>
           <Box sx={{ display: "flex", justifyContent: "center", gap: "20px", flexDirection: { lg: "row", xs: "column" }, alignItems: "center" }}>
-            <Button sx={{
+            <Button variant='text' sx={{
               display: 'flex', gap: 1, color: "white.main", '&:hover': {
                 color: "white.light"
               }
@@ -88,7 +88,7 @@ const Footer = () => {
               <Typography variant="caption" >Home</Typography>
             </Button>
 
-            <Button sx={{
+            <Button variant='text' sx={{
               display: 'flex', gap: 1, color: "white.main", '&:hover': {
                 color: "white.light"
               }
@@ -97,7 +97,7 @@ const Footer = () => {
               <Typography variant="caption" >About</Typography>
             </Button>
 
-            <Button sx={{
+            <Button variant='text' sx={{
               display: 'flex', gap: 1, color: "white.main", '&:hover': {
                 color: "white.light"
               }
@@ -106,7 +106,7 @@ const Footer = () => {
               <Typography variant="caption">Pre-Event</Typography>
             </Button>
 
-            <Button sx={{
+            <Button variant='text' sx={{
               display: 'flex', gap: 1, color: "white.main", '&:hover': {
                 color: "white.light"
               }
@@ -115,7 +115,7 @@ const Footer = () => {
               <Typography variant="caption">Exhibition Schedule</Typography>
             </Button>
 
-            <Button sx={{
+            <Button variant='text' sx={{
               display: 'flex', gap: 1, color: "white.main", '&:hover': {
                 color: "white.light"
               }
@@ -124,7 +124,7 @@ const Footer = () => {
               <Typography variant="caption">Contact</Typography>
             </Button>
 
-            <Button sx={{
+            <Button variant='text' sx={{
               display: 'flex', gap: 1, color: "white.main", '&:hover': {
                 color: "white.light"
               }
