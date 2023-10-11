@@ -13,7 +13,7 @@ This repository houses the codebase and resources for building the dynamic and e
 - **Gallery:** View captivating photos and videos from past Tech-Fest editions.
 
 ## Tech Stack
-- **Frontend:** HTML5, SCSS, JavaScript, Material UI, Fontawesome Icons
+- **Frontend:** React, CSS, Material UI
 - **Backend:** Python,Django
 - **Database:** MySQL
 <!-- - **Deployment:**  -->
