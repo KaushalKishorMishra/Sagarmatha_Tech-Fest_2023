@@ -1,6 +1,3 @@
-// import AndaluseSelioth from '../assets/fonts/andaluse-selioth/Andaluse Selioth.otf'
-// import Bellefair from "../assets/fonts/Bellefair/Bellefair-Regular.ttf"
-
 import { createTheme } from "@mui/material";
 
 
@@ -99,14 +96,14 @@ export const theme = createTheme({
             fontSize: "1.3rem",
             fontWeight: '400',
         },
+        VarelaRoundFont: {
+            fontFamily: ['Varela Round', 'sans-serif'].join(','),
+        },
         AsarFont: {
             fontFamily: ['Asar', 'serif'].join(','),
         },
         AndikaFont: {
             fontFamily: ['Andika', 'sans-serif'].join(','),
-        },
-        VarelaRoundFont: {
-            fontFamily: ['Varela Round', 'sans-serif'].join(','),
         },
     },
 
@@ -120,23 +117,38 @@ export const theme = createTheme({
                     textTransform: 'uppercase',
                     '&:hover': {
                         color: '#ffffff',
+                        // backgroundColor: "#1291de",
                     }
                 },
                 action: {
                     padding: '10px 40px',
-                    fontSize: { md: '1.2rem' },
+                    fontSize: '1.5rem',
                     fontWeight: '700',
                     textTransform: 'uppercase',
                     borderRadius: '50px',
                     backgroundColor: "#1291de",
                     color: '#ffffff',
-                    fontFamily: ['Varela Round', 'sans-serif'].join(','),
+                    fontFamily: ['Andika', 'sans-serif'].join(','),
+                    fontVariant: 'small-caps',
+                    height: 'fit-content',
                     '&:hover': {
                         backgroundColor: "#052b43",
                         transition: ".5s ease-in"
                     }
                 },
+                outlined: {
+
+                },
+                contained: {
+                },
+                action_outline: {
+                    padding: '10px 40px',
+                    height: 'fit-content',
+                    backgroundColor: "#ffffff",
+                    color: '#1291de',
+                }
             }
-        }
+        },
+        
     }
 })
