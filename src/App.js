@@ -1,9 +1,16 @@
+// import Navbar from "./components/templates/Navbar";  
+import "./assets/css/style.css"
+// import PageNotFound from "./components/templates/PageNotFound";
+import Footer from "./components/templates/Footer"
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div>
-      <h1>WELCOME TO SAGARMATHA TECH-FEST 2023</h1>
-    </div>
+    <>
+      {/* <Navbar /> */}
+      <HomePage />
+      <Footer />
+    </>
   );
 }
 
