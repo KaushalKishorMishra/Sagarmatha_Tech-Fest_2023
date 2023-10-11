@@ -20,5 +20,9 @@ export const credits = [
     {
         title: "Animations",
         html: "<a href=\"https://storyset.com/web\">Web illustrations by Storyset</a>"
+    },
+    {
+        title: "Carousel",
+        html: "<a href=\"https://flickity.metafizzy.co/\">Flickity</a>"
     }
 ]
