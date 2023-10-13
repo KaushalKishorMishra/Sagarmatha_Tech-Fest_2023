@@ -10,8 +10,7 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 const HomePage = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Box className="home-page" sx={{ mb: 3 }}>
-
+      <Box className="home-page" sx={{ mb: 3 }} id="home-page">
         {/* hero section start */}
         <Box className="hero-section" sx={{ height: { lg: "80vh", xs: "60vh" } }} id="hero" >
           <video autoPlay muted loop className='bg-video'>
@@ -69,7 +68,7 @@ const HomePage = () => {
                 Event Sponsors
               </Typography>
             </Box>
-            <Box component="div" className='carousel' data-flickity='{"wrapAround": true,"prevNextButtons": false, "pageDots": false,"autoPlay": 3000 }' sx={{ my: 2 }}>
+            {/* <Box component="div" className='carousel' data-flickity='{"wrapAround": true,"prevNextButtons": false, "pageDots": false,"autoPlay": 3000 }' sx={{ my: 2 }}>
               <Box component="div" className='carousel-cell' sx={{ width: { md: "30%", xs: "100%" }, backgroundColor: "primary.light" }}>
                 <img src="" alt="" />
               </Box>
@@ -85,7 +84,10 @@ const HomePage = () => {
               <Box component="div" className='carousel-cell' sx={{ width: { md: "30%", xs: "100%" }, backgroundColor: "primary.light" }}>
                 <img src="" alt="" />
               </Box>
-            </Box>
+            </Box> */}
+            <Typography variant='effectText' sx={{ textAlign: "center", my: 5 }}>
+              Coming Soon!!!
+            </Typography>
           </Container>
         </Box>
         {/* event sponsors ends */}
@@ -98,9 +100,9 @@ const HomePage = () => {
                 What we've got for you
               </Typography>
             </Box>
-            <Box className="">
-
-            </Box>
+            <Typography variant='effectText' sx={{ textAlign: "center", my: 5 }}>
+              Coming Soon!!!
+            </Typography>
           </Container>
         </Box>
         {/* events in tech-fest ends */}

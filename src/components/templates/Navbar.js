@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <AppBar position="sticky" sx={{ backgroundColor: "white.light", color: "black.main", }} className='lg-screen' >
+            <AppBar position="sticky" sx={{ backgroundColor: "white.light", color: "black.main", }} className='lg-screen'>
                 <Container maxWidth="xl">
                     <Box sx={{ py: 1 }}>
                         <Box className="flex">
@@ -54,10 +54,10 @@ const Navbar = () => {
                                             <Link to="/about" className="nav-link">About</Link>
                                         </ListItem>
                                         <ListItem>
-                                            <Link to="/preEvent" className="nav-link">Pre-events</Link>
+                                            <Link to="/preEvent" className="nav-link">Teams</Link>
                                         </ListItem>
                                         <ListItem>
-                                            <Link to="/exhbitionSchedule" className="nav-link">Exhbition Schedule</Link>
+                                            <Link to="/exhbitionSchedule" className="nav-link">Schedules</Link>
                                         </ListItem>
                                         <ListItem>
                                             <Link to="/contact" className="nav-link">Contact</Link>
@@ -89,10 +89,10 @@ const Navbar = () => {
                                     <Link to="/about" className="nav-link">About</Link>
                                 </ListItem>
                                 <ListItem>
-                                    <Link to="/preEvent" className="nav-link">Pre-events</Link>
+                                    <Link to="/preEvent" className="nav-link">Teams</Link>
                                 </ListItem>
                                 <ListItem>
-                                    <Link to="/exhbitionSchedule" className="nav-link">Exhbition Schedule</Link>
+                                    <Link to="/exhbitionSchedule" className="nav-link">Schedules</Link>
                                 </ListItem>
                                 <ListItem>
                                     <Link to="/contact" className="nav-link">Contact</Link>

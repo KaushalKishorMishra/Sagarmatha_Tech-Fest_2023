@@ -2,7 +2,7 @@ import { Container, ThemeProvider, Box, Button, Typography, CssBaseline } from '
 import React from 'react'
 import { theme } from '../../themes/Theme'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBlenderPhone, faBriefcase, faCalendarCheck, faCalendarDays, faChevronUp, faHouse, faInfo } from '@fortawesome/free-solid-svg-icons'
+import { faBlenderPhone, faBriefcase, faCalendarDays, faChevronUp, faHouse, faInfo, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 
 // logo import
 // The code snippet imports different social media icons from specific file paths.
@@ -102,8 +102,9 @@ const Footer = () => {
                 color: "white.light"
               }
             }}>
-              <FontAwesomeIcon icon={faCalendarCheck} />
-              <Typography variant="caption">Pre-Event</Typography>
+              {/* <FontAwesomeIcon icon={faCalendarCheck} /> */}
+              <FontAwesomeIcon icon={faPeopleGroup} />
+              <Typography variant="caption">Teams</Typography>
             </Button>
 
             <Button variant='text' sx={{
@@ -112,7 +113,7 @@ const Footer = () => {
               }
             }}>
               <FontAwesomeIcon icon={faCalendarDays} />
-              <Typography variant="caption">Exhibition Schedule</Typography>
+              <Typography variant="caption">Schedules</Typography>
             </Button>
 
             <Button variant='text' sx={{
