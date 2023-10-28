@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-
+import "../assets/css/animations.css"
 
 export const theme = createTheme({
     palette: {
@@ -96,6 +96,18 @@ export const theme = createTheme({
             fontSize: "1.3rem",
             fontWeight: '400',
         },
+        effectText: {
+            textShadow: "3px 3px 0 #989adc, 6px 6px 0 #71bdeb, 9px 9px #ffffff, 12px 12px 0 #333333",
+            fontFamily: ['Andika', 'sans-serif'].join(','),
+            fontWeight: 800,
+            textTransform: "uppercase",
+            fontSize:"7rem",
+            textAlign: "center",
+            margin: 0,
+            color: "#989adc",
+            letterSpacing: "0.4rem",
+            animation: "shadows 1.2s ease-in infinite, move 1.2s ease-in infinite",
+        },
         VarelaRoundFont: {
             fontFamily: ['Varela Round', 'sans-serif'].join(','),
         },
@@ -142,13 +154,21 @@ export const theme = createTheme({
                 contained: {
                 },
                 action_outline: {
-                    padding: '10px 40px',
-                    height: 'fit-content',
-                    backgroundColor: "#ffffff",
-                    color: '#1291de',
+                    color: '#052b43 ',
+                    borderRadius: '50px',
+                    border: '2px solid #052b43',
+                    maxWidth: "150px",
+                    width: "150px",
+                    '&:hover': {
+                        border: '2px solid #052b43',
+                        backgroundColor: "#052b43",
+                        color: '#ffffff',
+                        letterSpacing: "2px",
+                        transition: ".5s ease-in-out"
+                    }
                 }
             }
         },
-        
+
     }
 })
